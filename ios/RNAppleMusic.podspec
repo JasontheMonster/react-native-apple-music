@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.description  = <<-DESC
                   RNAppleMusic
                    DESC
-  s.homepage     = ""
+  s.homepage     = "https://github.com/Maelstroms38/react-native-apple-music/blob/master/README.md"
   s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
   s.author             = { "author" => "author@domain.cn" }
