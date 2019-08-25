@@ -1,17 +1,19 @@
+require 'json'
+
+package = JSON.parse(File.read(File.join(__dir__, 'package.json')))
 
 Pod::Spec.new do |s|
-  s.name         = "RNAppleMusic"
-  s.version      = "1.0.0"
+  s.name         = package['name']
+  s.version      = package['version']
   s.summary      = "RNAppleMusic"
   s.description  = <<-DESC
                   RNAppleMusic
                    DESC
   s.homepage     = "https://github.com/Maelstroms38/react-native-apple-music/blob/master/README.md"
   s.license      = "MIT"
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
-  s.author             = { "author" => "author@domain.cn" }
+  s.author       = { "author" => "author@domain.cn" }
   s.platform     = :ios, "7.0"
-  s.source       = { :git => "https://github.com/author/RNAppleMusic.git", :tag => "master" }
+  s.source       = { :git => "https://github.com/JasontheMonster/react-native-apple-music.git", :tag => "master" }
   s.source_files  = "RNAppleMusic/**/*.{h,m}"
   s.requires_arc = true
 
@@ -20,5 +22,3 @@ Pod::Spec.new do |s|
   #s.dependency "others"
 
 end
-
-  
